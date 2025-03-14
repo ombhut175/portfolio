@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {  FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function Hero() {
 
@@ -91,7 +91,7 @@ function Hero() {
           >
             <div className="w-80 h-80 mx-auto rounded-full overflow-hidden shadow-2xl">
               <img
-                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&h=400&fit=crop"
+                  src="/photos/img1.jpg"
                   alt="Om Bhut"
                   className="w-full h-full object-cover"
               />

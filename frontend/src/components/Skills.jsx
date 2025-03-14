@@ -12,15 +12,15 @@ import {
   FaCloudUploadAlt,
   FaFileUpload
 } from 'react-icons/fa';
-import { 
-  SiMongodb, 
+import {
+  SiMongodb,
   SiExpress,
   SiRedux,
   SiSocketdotio,
   SiTailwindcss,
   SiGoogleanalytics,
   SiPassport,
-  SiCloudinary
+  SiCloudinary, SiNextdotjs, SiTypescript, SiFlutter, SiDart, SiJavascript
 } from 'react-icons/si';
 
 const skillsData = [
@@ -28,6 +28,7 @@ const skillsData = [
     title: 'MERN Stack',
     icons: [
       { Icon: FaReact, color: '#61DAFB', darkColor: '#61DAFB', name: 'React' },
+      { Icon: SiNextdotjs, color: '#000000', darkColor: '#FFFFFF', name: 'Next.js' },
       { Icon: SiExpress, color: '#000000', darkColor: '#FFFFFF', name: 'Express' },
       { Icon: SiMongodb, color: '#47A248', darkColor: '#47A248', name: 'MongoDB' },
       { Icon: FaNodeJs, color: '#339933', darkColor: '#339933', name: 'Node.js' }
@@ -35,19 +36,29 @@ const skillsData = [
     description: 'Full-stack web development'
   },
   {
+    title: 'Cross-Platform Development',
+    icons: [
+      { Icon: SiFlutter, color: '#02569B', darkColor: '#02569B', name: 'Flutter' },
+      { Icon: SiDart, color: '#0175C2', darkColor: '#0175C2', name: 'Dart' }
+    ],
+    description: 'Building mobile applications with Flutter and Dart'
+  },
+  {
     title: 'Database',
     icons: [
       { Icon: FaMicrosoft, color: '#00A4EF', darkColor: '#00A4EF', name: 'MSSQL' },
-      { Icon: FaDatabase, color: '#336791', darkColor: '#336791', name: 'SQL' }
+      { Icon: FaDatabase, color: '#336791', darkColor: '#336791', name: 'SQL' },
     ],
     description: 'Database management & querying'
   },
   {
     title: 'Programming',
     icons: [
-      { Icon: FaJava, color: '#007396', darkColor: '#007396', name: 'Java' }
+      { Icon: FaJava, color: '#007396', darkColor: '#007396', name: 'Java' },
+      { Icon: SiTypescript, color: '#3178C6', darkColor: '#3178C6', name: 'TypeScript' },
+      { Icon: SiDart, color: '#02569B', darkColor: '#02569B', name: 'Dart' }
     ],
-    description: 'DSA & Problem solving'
+    description: 'DSA, Problem solving & Cross-platform development'
   },
   {
     title: 'Version Control',

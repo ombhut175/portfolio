@@ -10,7 +10,7 @@ function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Let's Design Together</h2>
+          <h2 className="text-3xl font-bold mb-4">Let's Make Together</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Ready to start your next project? Get in touch and let's create something amazing together.
           </p>

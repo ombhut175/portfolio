@@ -27,7 +27,7 @@ function About() {
           >
             <div className="w-80 h-80 mx-auto rounded-full overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop"
+                src="/photos/img2.jpg"
                 alt="About Me"
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
               />
