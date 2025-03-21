@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import {FaTwitter, FaInstagram, FaLinkedin, FaGithub} from 'react-icons/fa';
+import {SOCIAL_MEDIA_LINKS} from "../utils/array_const.js";
 
 function Hero() {
 
@@ -64,12 +64,7 @@ function Hero() {
                 transition={{ delay: 0.6 }}
                 className="flex gap-6 mt-8"
             >
-              {[
-                { Icon: FaTwitter, link: 'https://x.com/Om_Bhut1725?t=SBv3J4S8C-ER0BNPtQuFHA&s=08' },
-                { Icon: FaInstagram, link: 'https://www.instagram.com/reactivcoderz/?igsh=MWp5MHNnNDBkNWtoNw%3D%3D#' },
-                { Icon: FaLinkedin, link: 'https://www.linkedin.com/in/om-bhut-ab93972b9' },
-                { Icon: FaGithub, link: 'https://github.com/ombhut175' }
-              ].map(({ Icon, link }, index) => (
+              {SOCIAL_MEDIA_LINKS.map(({ Icon, link }, index) => (
                   <motion.a
                       key={index}
                       href={link}

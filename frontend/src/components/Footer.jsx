@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {SOCIAL_MEDIA_LINKS} from "../utils/array_const.js";
 
 function Footer() {
   return (
@@ -22,11 +22,7 @@ function Footer() {
 
           {/* Social Links */}
           <div className="flex gap-6">
-            {[
-              { Icon: FaTwitter, link: 'https://x.com/Om_Bhut1725?t=SBv3J4S8C-ER0BNPtQuFHA&s=08' },
-              { Icon: FaInstagram, link: 'https://www.instagram.com/reactivcoderz/?igsh=MWp5MHNnNDBkNWtoNw%3D%3D#' },
-              { Icon: FaLinkedin, link: 'https://www.linkedin.com/in/om-bhut-ab93972b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' }
-            ].map(({ Icon, link }, index) => (
+            {SOCIAL_MEDIA_LINKS.map(({ Icon, link }, index) => (
               <a
                 key={index}
                 href={link}

@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ALL, APP_DEVELOPMENT, FULL_STACK_DEVELOPMENT } from "../utils/string_const.js";
+import {CATEGORIES} from "../utils/string_const.js";
+
+
+const {ALL,APP_DEVELOPMENT,FULL_STACK_DEVELOPMENT} = CATEGORIES;
 
 function Projects() {
   const allProjects = [
