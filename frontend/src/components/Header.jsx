@@ -26,9 +26,9 @@ function Header() {
             {darkMode ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
           </button>
 
-          <a href="/CV.pdf" download>
+          <a href="/resume.pdf" download>
             <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90">
-              Download CV
+              Download Resume
             </button>
           </a>
         </div>

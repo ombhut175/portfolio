@@ -3,9 +3,12 @@ import { motion } from 'framer-motion';
 import {CATEGORIES} from "../utils/string_const.js";
 
 
-const {ALL,APP_DEVELOPMENT,FULL_STACK_DEVELOPMENT} = CATEGORIES;
+const {ALL,FULL_STACK_DEVELOPMENT} = CATEGORIES;
 
 function Projects() {
+
+  const categories = [ALL,FULL_STACK_DEVELOPMENT];
+
   const allProjects = [
     {
       image: "/projects/ecommerce.png",
@@ -20,9 +23,9 @@ function Projects() {
       link: 'https://github.com/ombhut175/ShortUrl'
     },
     {
-      image: "/projects/loveloom.png",
+      image: "/projects/Heart Bridge.png",
       title: 'Matrimony app',
-      category: APP_DEVELOPMENT,
+      category: FULL_STACK_DEVELOPMENT,
       link: 'https://github.com/ombhut175/matrimony_app'
     },
   ];
@@ -51,7 +54,7 @@ function Projects() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {[ALL, FULL_STACK_DEVELOPMENT, APP_DEVELOPMENT].map((filter) => (
+            {categories.map((filter) => (
                 <motion.button
                     key={filter}
                     whileHover={{ scale: 1.05, backgroundColor: '#FF6B00', color: 'white' }}

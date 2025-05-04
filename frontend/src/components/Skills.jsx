@@ -8,9 +8,9 @@ import {
   FaGitAlt, 
   FaGithub,
   FaMicrosoft,
-  FaGoogle,
-  FaCloudUploadAlt,
-  FaFileUpload
+  FaFileUpload,
+  FaBox,
+    FaPaw
 } from 'react-icons/fa';
 import {
   SiMongodb,
@@ -20,7 +20,7 @@ import {
   SiTailwindcss,
   SiGoogleanalytics,
   SiPassport,
-  SiCloudinary, SiNextdotjs, SiTypescript, SiFlutter, SiDart, SiJavascript
+  SiCloudinary, SiNextdotjs, SiTypescript, SiFlutter, SiDart,SiSwr
 } from 'react-icons/si';
 
 const skillsData = [
@@ -39,7 +39,6 @@ const skillsData = [
     title: 'Cross-Platform Development',
     icons: [
       { Icon: SiFlutter, color: '#02569B', darkColor: '#02569B', name: 'Flutter' },
-      { Icon: SiDart, color: '#0175C2', darkColor: '#0175C2', name: 'Dart' }
     ],
     description: 'Building mobile applications with Flutter and Dart'
   },
@@ -74,6 +73,8 @@ const toolsData = {
   title: 'Development Tools',
   icons: [
     { Icon: SiRedux, color: '#764ABC', darkColor: '#764ABC', name: 'Redux Toolkit' },
+    { Icon: FaPaw, color: '#FF7EDB', darkColor: '#FF7EDB', name: 'Zustand' },
+    { Icon: SiSwr, color: '#000000', darkColor: '#FFFFFF', name: 'SWR' },
     { Icon: FaFileUpload, color: '#FF6B00', darkColor: '#FF6B00', name: 'Multer' },
     { Icon: SiCloudinary, color: '#3448C5', darkColor: '#3448C5', name: 'Cloudinary' },
     { Icon: SiPassport, color: '#34E27A', darkColor: '#34E27A', name: 'Passport OAuth' },
@@ -126,7 +127,7 @@ function ToolsSection() {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mt-12 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg"
+      className="mt-12 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg group"
     >
       <h3 className="text-xl font-bold mb-6 text-center">{toolsData.title}</h3>
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-6">
@@ -135,9 +136,9 @@ function ToolsSection() {
             key={name}
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
+            transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.3) }}
             whileHover={{ scale: 1.15, rotate: 360 }}
-            className="flex flex-col items-center group"
+            className="flex flex-col items-center"
           >
             <Icon 
               className="text-3xl mb-2 transition-all duration-300" 

@@ -23,7 +23,7 @@ function App() {
         <Services />
         <Projects />
         {/*<Testimonials />*/}
-        <Contact />
+        {/*<Contact />*/}
       </main>
       <Footer />
     </div>
