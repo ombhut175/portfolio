@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
-import { 
-  FaReact, 
-  FaNodeJs, 
-  FaDatabase, 
-  FaJava, 
-  FaGitAlt, 
+import {
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaJava,
+  FaGitAlt,
   FaGithub,
   FaMicrosoft,
   FaFileUpload,
@@ -20,7 +20,15 @@ import {
   SiTailwindcss,
   SiGoogleanalytics,
   SiPassport,
-  SiCloudinary, SiNextdotjs, SiTypescript, SiFlutter, SiDart,SiSwr
+  SiCloudinary,
+  SiNextdotjs,
+  SiTypescript,
+  SiFlutter,
+  SiDart,
+  SiSwr,
+  SiFirebase,
+  SiFirebase as SiFirestore,
+  SiFirebase as SiFirebaseStorage
 } from 'react-icons/si';
 
 const skillsData = [
@@ -47,6 +55,7 @@ const skillsData = [
     icons: [
       { Icon: FaMicrosoft, color: '#00A4EF', darkColor: '#00A4EF', name: 'MSSQL' },
       { Icon: FaDatabase, color: '#336791', darkColor: '#336791', name: 'SQL' },
+      { Icon: SiFirestore, color: '#FFCA28', darkColor: '#FFCA28', name: 'Cloud Firestore' },
     ],
     description: 'Database management & querying'
   },
@@ -77,6 +86,8 @@ const toolsData = {
     { Icon: SiSwr, color: '#000000', darkColor: '#FFFFFF', name: 'SWR' },
     { Icon: FaFileUpload, color: '#FF6B00', darkColor: '#FF6B00', name: 'Multer' },
     { Icon: SiCloudinary, color: '#3448C5', darkColor: '#3448C5', name: 'Cloudinary' },
+    { Icon: SiFirebase, color: '#FFCA28', darkColor: '#FFCA28', name: 'Firebase' },
+    { Icon: SiFirebaseStorage, color: '#FFCA28', darkColor: '#FFCA28', name: 'Firebase Storage' },
     { Icon: SiPassport, color: '#34E27A', darkColor: '#34E27A', name: 'Passport OAuth' },
     { Icon: SiSocketdotio, color: '#010101', darkColor: '#FFFFFF', name: 'Socket.IO' },
     { Icon: SiTailwindcss, color: '#38B2AC', darkColor: '#38B2AC', name: 'Tailwind CSS' },
@@ -104,8 +115,8 @@ function SkillCard({ skill, index }) {
             transition={{ duration: 0.3 }}
             className="flex flex-col items-center"
           >
-            <Icon 
-              className="text-4xl mb-1 transition-colors" 
+            <Icon
+              className="text-4xl mb-1 transition-colors"
               style={{ color: darkMode ? darkColor : color }}
             />
             <span className="text-xs opacity-0 group-hover:opacity-100 transition-opacity">
@@ -140,8 +151,8 @@ function ToolsSection() {
             whileHover={{ scale: 1.15, rotate: 360 }}
             className="flex flex-col items-center"
           >
-            <Icon 
-              className="text-3xl mb-2 transition-all duration-300" 
+            <Icon
+              className="text-3xl mb-2 transition-all duration-300"
               style={{ color: darkMode ? darkColor : color }}
             />
             <span className="text-xs text-center opacity-0 group-hover:opacity-100 transition-opacity">
